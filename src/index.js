@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './Layout/Header';
+import placeHolder from './img/placeholder.png';
+import portraitNormal from './img/portrait.png';
+import portraitFrench from './img/portrait-french.png';
 
 function MainContent() {
     return (
@@ -14,21 +17,21 @@ function MainContent() {
                       </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="./img/placeholder.png" className="d-block w-100" alt="..." />
+                            <img src={placeHolder} className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                                 <h2>Diagnostico</h2>
                                 <p>Realiza un auto-diagnostico en la sección de "Diagnostico", ¡es gratis!</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="./img/placeholder.png" className="d-block w-100" alt="..." />
+                            <img src={placeHolder} className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                                 <h2>Descargas</h2>
                                 <p>¡Puedes descargar los programas que utilizamos en la sección de "Descargas"!</p>
                             </div>
                         </div>
                         <div className="carousel-item">
-                            <img src="./img/placeholder.png" className="d-block w-100" alt="..." />
+                            <img src={placeHolder} className="d-block w-100" alt="..." />
                             <div className="carousel-caption d-none d-md-block">
                                 <h2>¿Todavía lo estas pensando...?</h2>
                                 <p>Puedes leer sobre nuestros valores, misión y mas en la sección de "Nosotros"</p>
@@ -54,21 +57,21 @@ function MainContent() {
 
                     <div className="d-flex justify-content-between my-5">
                         <div className="card" style={{width: "18rem"}}>
-                            <img src="./img/portrait.png" className="card-img-top" alt="..." />
+                            <img src={portraitNormal} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">John Doe</h5>
                                 <p className="card-text">Se demoran un poco en dar el servicio pero una vez con el técnico ahi, todo bien!</p>
                             </div>
                         </div>
                         <div className="card" style={{width: "18rem"}}>
-                            <img src="./img/portrait.png" className="card-img-top" alt="..." />
+                            <img src={portraitNormal} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Juan Pablo</h5>
                                 <p className="card-text">Muy weno.</p>
                             </div>
                         </div>
                         <div className="card" style={{width: "18rem"}}>
-                            <img src="./img/portrait-french.png" className="card-img-top" alt="..." />
+                            <img src={portraitFrench} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">Pierre le Baguette</h5>
                                 <p className="card-text">Ooh la la, baise moi je suis fatigué!</p>
