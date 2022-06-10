@@ -11,16 +11,16 @@ function Header() {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Inicio</a>
+                            <a className="nav-link" href="/">Inicio</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Diagnostico</a>
+                            <a className="nav-link" href="/diagnostico">Diagnostico</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Descargas</a>
+                            <a className="nav-link" href="/descargas">Descargas</a>
                         </li>
                         <li className="nav-item mh-a">
-                            <a className="nav-link" href="#">Nosotros</a>
+                            <a className="nav-link" href="/nosotros">Nosotros</a>
                         </li>
                     </ul>
                 </div>
