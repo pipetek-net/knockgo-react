@@ -4,54 +4,58 @@ import portraitNormal from '../img/portrait.png';
 function Nosotros() {
     return(
         <>
-            <main>
+        <main>
             <div className="container my-5">
-                <h3 className="text-center">Visión</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex eaque blanditiis aliquam! Beatae aperiam voluptas totam perferendis ab harum incidunt quo aspernatur labore nostrum, suscipit quis corporis rem commodi.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati omnis expedita quo ratione error minus id laudantium, placeat dolore optio exercitationem provident sequi. Maxime nisi dicta est, voluptas officia optio.</p>
-
-                <h3 className="text-center">Misión</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti harum dignissimos tenetur voluptatibus animi quibusdam quidem laboriosam facilis, eum dolorum nobis quos iusto cum repellat? Ipsum excepturi magnam quod?</p>
-
-                <h3 className="text-center">Nuestra historia</h3>
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                <div className="d-flex justify-content-between my-5">
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitNormal} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Sebastián Gonzalez</h5>
-                            <h3 className="card-text">CEO</h3>
-                            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti harum dignissimos tenetur voluptatibus animi quibusdam quidem laboriosam facilis, eum dolorum nobis quos iusto cum repellat? Ipsum excepturi magnam quod?</p>
-                        </div>
-                    </div>
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitNormal} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Bastian Román</h5>
-                            <h3 className='card-text'>CEO</h3>
-                            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti harum dignissimos tenetur voluptatibus animi quibusdam quidem laboriosam facilis, eum dolorum nobis quos iusto cum repellat? Ipsum excepturi magnam quod?</p>
-                        </div>
-                    </div>
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitNormal} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Joaquín French</h5>
-                            <h3 className='card-text'>CEO</h3>
-                            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti harum dignissimos tenetur voluptatibus animi quibusdam quidem laboriosam facilis, eum dolorum nobis quos iusto cum repellat? Ipsum excepturi magnam quod?</p>
-                        </div>
-                    </div>
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitNormal} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Giovanni Panini</h5>
-                            <h3 className='card-text'>CEO</h3>
-                            <p className="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti harum dignissimos tenetur voluptatibus animi quibusdam quidem laboriosam facilis, eum dolorum nobis quos iusto cum repellat? Ipsum excepturi magnam quod?</p>
+                <h3 className="text-center">Ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit quaerat sit veritatis totam qui exercitationem maiores veniam ipsum iste non minima obcaecati numquam ea, magnam nemo labore ut vel.</p>
+            </div>
+            <div style={{backgroundColor: "#f0f0f0"}}>
+                <div className="container">
+                    <div className="d-flex align-items-center gap-5 py-5">
+                    <img src={portraitNormal} alt="" srcset="" />
+                        <div>
+                            <h3>Lorem</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsum consequuntur? Minima, beatae sit! Aliquam consequuntur architecto earum eum dolorem tempore nihil repellat. Sint expedita recusandae quo debitis nostrum officiis?</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            </main>
+            <div style={{backgroundColor: "#e8e8e8"}}>
+                <div className="container">
+                    <div className="d-flex align-items-center gap-5 py-5">
+                        <div>
+                            <h3>Dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident libero iusto nulla nemo harum alias dolor quod? Dolorum magnam consectetur odio explicabo hic illum vitae necessitatibus voluptatibus nihil numquam.</p>
+                        </div>
+                        <img src={portraitNormal} alt="" srcset="" />
+                    </div>
+                </div>
+            </div>
+            <div style={{backgroundColor: "#e0e0e0"}}>
+                <div className="container">
+                    <div className="d-flex align-items-center gap-5 py-5">
+                        <img src={portraitNormal} alt="" srcset="" />
+                        <div>
+                            <h3>Amet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi totam libero, ipsum eum placeat? Autem eum exercitationem aut totam ad, ratione cum. Necessitatibus ducimus aliquid accusantium culpa maxime tempora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{backgroundColor: "#d8d8d8"}}>
+                <div className="container">
+                    <div className="d-flex align-items-center gap-5 py-5">
+                        <div>
+                            <h3>Consectetur</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci laboriosam obcaecati quis illum soluta possimus ipsum iusto odit, quod harum. Rerum necessitatibus esse cum, explicabo doloribus fugit possimus facilis! Vel.</p>
+                        </div>
+                       <img src={portraitNormal} alt="" srcset="" />
+                    </div>
+                </div>
+            </div>
+        </main>
         </>
     )
 }
