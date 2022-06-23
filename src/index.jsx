@@ -6,6 +6,8 @@ import Inicio from './Pages/Inicio';
 import Diagnostico from './Pages/Diagnostico';
 import Descargas from './Pages/Descargas';
 import Nosotros from './Pages/Nosotros';
+import SesionIniciar from './Pages/Sesion/Iniciar';
+import SesionRegistrar from './Pages/Sesion/Registrar';
 
 export default function App() {
     return (
@@ -16,6 +18,8 @@ export default function App() {
                     <Route path='diagnostico' element={<Diagnostico />} />
                     <Route path='descargas' element={<Descargas />} />
                     <Route path='nosotros' element={<Nosotros />} />
+                    <Route path='/sesion/iniciar' element={<SesionIniciar />} />
+                    <Route path='/sesion/registrar' element={<SesionRegistrar />} />
                 </Route>
             </Routes>
         </BrowserRouter>

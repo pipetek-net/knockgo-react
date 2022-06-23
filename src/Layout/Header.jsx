@@ -9,19 +9,29 @@ function Header() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Inicio</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/diagnostico">Diagnostico</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/descargas">Descargas</a>
-                        </li>
-                        <li className="nav-item mh-a">
-                            <a className="nav-link" href="/nosotros">Nosotros</a>
-                        </li>
+                    <ul className="navbar-nav flex-grow-1 justify-content-between">
+                        <div className="navbar-nav">
+                            <li className="nav-item">
+                                <a className="nav-link" href="/">Inicio</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/diagnostico">Diagnostico</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/descargas">Descargas</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="/nosotros">Nosotros</a>
+                            </li>
+                        </div>
+                        <div className="navbar-nav">
+                            <li>
+                                <a className="nav-link" href="/sesion/iniciar">Iniciar Sesion</a>
+                            </li>
+                            <li>
+                                <a className="nav-link" href="/sesion/registrar">Registrarse</a>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>
