@@ -3,47 +3,19 @@ import React from "react";
 function Descargas() {
   return (
     <>
-      <main>
-      <br/>
-
+    <main>
         <div className="container my-5">
-          <h3 className="text-center">Descarga</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-            ex eaque blanditiis aliquam! Beatae aperiam voluptas totam
-            perferendis ab harum incidunt quo aspernatur labore nostrum,
-            suscipit quis corporis rem commodi.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
-            omnis expedita quo ratione error minus id laudantium, placeat dolore
-            optio exercitationem provident sequi. Maxime nisi dicta est,
-            voluptas officia optio.
-          </p>
+            <h3 className="text-center">Sit</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptas ut iure tenetur aliquam id consequuntur distinctio, harum ipsa, in, quam nostrum quo laborum doloribus quos velit consequatur sit neque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto quos ipsa doloremque est alias, aspernatur aliquam id perspiciatis error dignissimos, impedit blanditiis fugit rerum sapiente eos quia voluptatem adipisci.</p>
 
-          <h3 className="text-center">Tutorial</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            corrupti harum dignissimos tenetur voluptatibus animi quibusdam
-            quidem laboriosam facilis, eum dolorum nobis quos iusto cum
-            repellat? Ipsum excepturi magnam quod?
-          </p>
+            <h3 className="text-center">Consectetur</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, dolore voluptatum dignissimos, consectetur harum nihil dolores repellat eum vero fugiat odio perspiciatis libero, animi officia commodi? Odio, error molestias.</p>
         </div>
-
-        <div class="col-lg-8 offset-lg-2 text-center">
-          <div class="d-inline-block v-align-top">
-            <a
-              class="btn btn-primary"
-              id="download-button"
-              href="https://anydesk.com/n"
-            >
-              <p class="mb-0 d-inline-block">Download Now</p>
-            </a>
-            <div class="mt-2"></div>
-          </div>
-          <div></div>
+        <div className="d-flex justify-content-center">
+            <a href="https://anydesk.com/es" className="btn btn-primary">¡Descarga aqui!</a>
         </div>
-      </main>
+    </main>
     </>
   );
 }

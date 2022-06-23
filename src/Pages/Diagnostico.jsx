@@ -133,7 +133,7 @@ function Diagnostico() {
                         <div className="col-8">
                             <form action="" method="get">
                                 <div className="mb-3">
-                                    <label htmlFor="deviceType">¿Con que tipo de dispositivo esta teniendo problemas?</label>
+                                    <label htmlFor="deviceType" className="form-label">¿Con que tipo de dispositivo esta teniendo problemas?</label>
                                     <select id="deviceType" className="form-select" name="deviceType" onChange={UpdateDeviceType}>
                                         <option value="none">Selecciona una opcion...</option>
                                         <option value="computador">Computador</option>
@@ -141,19 +141,19 @@ function Diagnostico() {
                                     </select>
                                 </div>
                                 <div className="my-3">
-                                    <label htmlFor="">¿Que marca es el dispositivo?</label>
+                                    <label htmlFor="" className="form-label">¿Que marca es el dispositivo?</label>
                                     <select id="deviceBrand" className="form-select" name="deviceBrand" onChange={UpdateDeviceBrand} disabled>
                                         <option value="none">Selecciona una opcion...</option>
                                     </select>
                                 </div>
                                 <div className="my-3">
-                                    <label htmlFor="deviceCategory">¿Que tipo de problema tiene?</label>
+                                    <label htmlFor="deviceCategory" className="form-label">¿Que tipo de problema tiene?</label>
                                     <select id="deviceCategory" className="form-select" name="deviceCategory" onChange={UpdateDeviceCategory} disabled>
                                         <option value="none">Selecciona una opcion...</option>
                                     </select>
                                 </div>
                                 <div className="my-3">
-                                    <label htmlFor="deviceOther">Si desea agregar mas informacion, porfavor escribala aqui:</label>
+                                    <label htmlFor="deviceOther" className="form-label">Si desea agregar mas informacion, porfavor escribala aqui:</label>
                                     <textarea id="deviceOther" className="form-control w-100 h-25" name="deviceOther" onChange={UpdateDeviceOther}></textarea>
                                 </div>
                             </form>
