@@ -12,13 +12,11 @@ function UpdateDeviceType() {
         
         detailType.removeAttribute('value');
         detailTypeText.innerHTML = 'N/A';
-        detailTypeText.className = 'text-secondary';
     }
     else {
         deviceBrand.removeAttribute('disabled');
         detailType.setAttribute('value', deviceType.value);
         detailTypeText.innerHTML = deviceType.value.charAt(0).toUpperCase() + deviceType.value.slice(1);
-        detailTypeText.className = 'text-primary';
 
         switch(deviceType.value)
         {
