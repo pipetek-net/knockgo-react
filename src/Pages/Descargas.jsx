@@ -5,15 +5,44 @@ function Descargas() {
     <>
     <main>
         <div className="container my-5">
-            <h3 className="text-center">Sit</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam voluptas ut iure tenetur aliquam id consequuntur distinctio, harum ipsa, in, quam nostrum quo laborum doloribus quos velit consequatur sit neque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iusto quos ipsa doloremque est alias, aspernatur aliquam id perspiciatis error dignissimos, impedit blanditiis fugit rerum sapiente eos quia voluptatem adipisci.</p>
-
-            <h3 className="text-center">Consectetur</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima, dolore voluptatum dignissimos, consectetur harum nihil dolores repellat eum vero fugiat odio perspiciatis libero, animi officia commodi? Odio, error molestias.</p>
-        </div>
-        <div className="d-flex justify-content-center">
-            <a href="https://anydesk.com/es" className="btn btn-primary">¡Descarga aqui!</a>
+            <div className="row">
+                <div className="col-8">
+                    <div className="row">
+                        <h2>Servicio Remoto</h2>
+                        <p>Nuestro servicio se basa en reparación remota (por internet) de dispositivos. Para esto es necesario que el cliente descargue el software que utilizamos en Knock&Go.</p>
+                    </div>
+                    <div className="row">
+                        <h2>Descargas</h2>
+                        <div className="d-flex justify-content-between">
+                            <div className="flex-grow-1 d-flex flex-column align-items-center">
+                                <h4 className="text-center"><i className="fa-brands fa-windows fst-normal"></i> Windows</h4>
+                                <a href="https://download.anydesk.com/AnyDesk.exe" className="btn btn-primary w-50" download>Descargar</a>
+                            </div>
+                            <div className="flex-grow-1 d-flex flex-column align-items-center border-start border-end">
+                                <h4 className="text-center"><i className="fa-brands fa-apple fst-normal"></i> MacOS</h4>
+                                <a href="https://download.anydesk.com/anydesk.dmg" className="btn btn-primary w-50" download>Descargar</a>
+                            </div>
+                            <div className="flex-grow-1 d-flex flex-column align-items-center">
+                                <h4 className="text-center"><i className="fa-brands fa-linux fst-normal"></i> Linux</h4>
+                                <a href="https://download.anydesk.com/linux/anydesk_6.2.0-1_amd64.deb" className="btn btn-primary w-50" download>Descargar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-4 border-start">
+                    <div className="ms-3">
+                        <h2>Links</h2>
+                        <ul className="list-unstyled">
+                            <li><a href="#">Instalación Windows.pdf</a></li>
+                            <li><a href="#">Instalación MacOS.pdf</a></li>
+                            <li><a href="#">Instalación Linux.pdf</a></li>
+                            <hr className="mt-2 mb-1" />
+                            <li><a href="#">Proceso de Conexión.pdf</a></li>
+                            <li><a href="#">Política de Privacidad.pdf</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     </>
