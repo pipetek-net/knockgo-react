@@ -15,7 +15,7 @@ function Header() {
                                 <a className="nav-link" href="/">Inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/diagnostico">Diagnostico</a>
+                                <a className="nav-link" href="/diagnostico">Diagnóstico</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="/descargas">Descargas</a>
