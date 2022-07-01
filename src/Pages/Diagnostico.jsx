@@ -97,6 +97,16 @@ function UpdateDeviceCategory() {
     var detailCategory = document.getElementById('detailCategory');
     var detailCategoryText = document.getElementById('detailCategoryText');
 
+    var detailSolution = [];
+    var detailSolutionText = document.getElementById('detailSolutionText');
+    var detailPrice;
+    var detailPriceText = document.getElementById('detailPriceText');
+
+    detailSolutionText.innerHTML = "";
+    detailPriceText.innerHTML = "$0"
+
+    console.log("DeviceCategory ", deviceCategory.value)
+
     if (deviceCategory.value === 'none') {
         detailCategory.removeAttribute('value');
         detailCategoryText.innerHTML = 'N/A';
@@ -105,6 +115,64 @@ function UpdateDeviceCategory() {
         deviceCategory.removeAttribute('disabled');
         detailCategory.setAttribute('value', deviceCategory.value);
         detailCategoryText.innerHTML = deviceCategory.value.charAt(0).toUpperCase() + deviceCategory.value.slice(1);
+
+        switch (deviceCategory.value)
+        {
+            /* Template
+                case "":
+                    detailSolution[0] = "";
+                    detailSolution[1] = "";
+                    detailSolution[2] = "";
+                    detailPrice = "";
+                    break;
+            */
+            case "internet":
+                detailSolution[0] = "Reiniciar el router.";
+                detailSolution[1] = "Reconectar cable de red.";
+                detailSolution[2] = "Cambiar ajustes de DNS.";
+                detailSolution[3] = "Reemplazar cable de red.";
+                detailPrice = "$55.000";
+                break;
+            case "bateria":
+                detailSolution[0] = "Correr un scan de virus y remover si es necesario.";
+                detailSolution[1] = "Desinstalar aplicaciones y programas poco usados.";
+                detailSolution[2] = "Actualizar los drivers del sistema";
+                detailSolution[3] = "Reemplazar la batería del dispositivo";
+                detailPrice = "$105.000";
+                break;
+            case "pantalla":
+                detailSolution[0] = "Actualizar drivers de video";
+                detailSolution[1] = "Reconectar cables de pantalla.";
+                detailSolution[2] = "Reemplazar la pantalla.";
+                detailPrice = "$40.000";
+                break;
+            case "audio":
+                detailSolution[0] = "Verificar que el nivel de volumen es el adecuado.";
+                detailSolution[1] = "Seleccionar los dispositivos de entrada/salida de audio correctos.";
+                detailSolution[2] = "Reconectar el cable del dispositivo de audio.";
+                detailSolution[3] = "Reemplazar dispositivo de audio o adaptador de audio."
+                detailPrice = "$35.000";
+                break;
+            case "encendido":
+                detailSolution[0] = "Seleccionar correctamente el orden de inicio en la BIOS/UEFI.";
+                detailSolution[1] = "Reparar el inicio del sistema mediante las herramienta avanzadas.";
+                detailPrice = "$130.000";
+                break;
+            default:
+                detailSolution = null;
+                detailPrice = null;
+                break;
+        }
+
+        if (detailSolution.length == null) {
+            detailSolutionText.innerHTML = "";
+        }
+        else {
+            detailSolution.forEach(element => {
+                detailSolutionText.innerHTML += "<li>" + element + "</li>";
+            });
+            detailPriceText.innerHTML = detailPrice;
+        }
     }
 }
 
@@ -172,9 +240,7 @@ function Diagnostico() {
                                 <div>
                                     <div className="my-4">
                                         <h3 className="mb-0 fs-5">Posibles soluciones:</h3>
-                                        <ol>
-                                            <li>Similique quaerat assumenda ea nemo asperiores eos fuga ratione quis quisquam modi...</li>
-                                            <li>Placeat commodi, libero sequi vitae natus dolorem? Magnam aspernatur reiciendis culpa...</li>
+                                        <ol id="detailSolutionText">
                                         </ol>
                                     </div>
                                 </div>
@@ -184,7 +250,7 @@ function Diagnostico() {
                                 <p>No hay problema, ¡ayudar es nuestro negocio!</p>
                                 <div className="text-center fs-6 mb-2 lh-sm">
                                     <h4 className="mb-0">Precio estimado:</h4>
-                                    <span className="fs-2">$55.500</span>
+                                    <span id="detailPriceText" className="fs-2">$55.500</span>
                                 </div>
                                 <button type="submit" className="btn btn-primary fs-3">¡Contratanos!</button>
                             </div>
