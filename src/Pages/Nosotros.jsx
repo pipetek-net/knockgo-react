@@ -1,21 +1,25 @@
 import React from 'react';
-import portraitNormal from '../img/portrait.png';
+import portraitFritsch from '../img/nosotros/fritsch.jpg';
+import portraitHering from '../img/nosotros/hering.jpg';
+import portraitAravena from '../img/nosotros/aravena.jpg';
+import portraitSalinas from '../img/nosotros/salinas.jpg';
 
 function Nosotros() {
     return(
         <>
         <main>
             <div className="container my-5">
-                <h3 className="text-center">Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem impedit quaerat sit veritatis totam qui exercitationem maiores veniam ipsum iste non minima obcaecati numquam ea, magnam nemo labore ut vel.</p>
+                <h3 className="text-center">¿Quienes Somos?</h3>
+                <p>Somos un equipo de cuatro estudiantes de Ingeniería en Informática de INACAP. Nos enorgullecemos por nuestro alto estándar de calidad y compromiso con la elegancia.</p>
+                <p>La fortaleza de nuestro equipo viene de nuestra union y de nuestras diversas habilidades, que se complementan perfectamente para lograr las metas y objetivos que nos proponemos.</p>
             </div>
             <div style={{backgroundColor: "#f0f0f0"}}>
                 <div className="container">
                     <div className="d-flex align-items-center gap-5 py-5">
-                    <img src={portraitNormal} alt="" srcset="" />
-                        <div>
-                            <h3>Lorem</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ipsum consequuntur? Minima, beatae sit! Aliquam consequuntur architecto earum eum dolorem tempore nihil repellat. Sint expedita recusandae quo debitis nostrum officiis?</p>
+                    <img src={portraitHering} alt="" srcset="" />
+                        <div className="flex-grow-1">
+                            <h3>Sebastián Hering Emilfork</h3>
+                            <h5>Líder de Proyecto</h5>
                         </div>
                     </div>
                 </div>
@@ -24,21 +28,21 @@ function Nosotros() {
             <div style={{backgroundColor: "#e8e8e8"}}>
                 <div className="container">
                     <div className="d-flex align-items-center gap-5 py-5">
-                        <div>
-                            <h3>Dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, provident libero iusto nulla nemo harum alias dolor quod? Dolorum magnam consectetur odio explicabo hic illum vitae necessitatibus voluptatibus nihil numquam.</p>
+                    <div className="flex-grow-1 text-end">
+                            <h3>Bastián Aravena Huenuanca</h3>
+                            <h5>Diseñador Gráfico</h5>
                         </div>
-                        <img src={portraitNormal} alt="" srcset="" />
+                        <img src={portraitAravena} alt="" srcset="" />
                     </div>
                 </div>
             </div>
             <div style={{backgroundColor: "#e0e0e0"}}>
                 <div className="container">
                     <div className="d-flex align-items-center gap-5 py-5">
-                        <img src={portraitNormal} alt="" srcset="" />
-                        <div>
-                            <h3>Amet</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quasi totam libero, ipsum eum placeat? Autem eum exercitationem aut totam ad, ratione cum. Necessitatibus ducimus aliquid accusantium culpa maxime tempora.</p>
+                        <img src={portraitSalinas} alt="" srcset="" />
+                        <div className="flex-grow-1">
+                            <h3>Giovanni Salinas Villas</h3>
+                            <h5>Coordinador Back-End</h5>
                         </div>
                     </div>
                 </div>
@@ -47,11 +51,11 @@ function Nosotros() {
             <div style={{backgroundColor: "#d8d8d8"}}>
                 <div className="container">
                     <div className="d-flex align-items-center gap-5 py-5">
-                        <div>
-                            <h3>Consectetur</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci laboriosam obcaecati quis illum soluta possimus ipsum iusto odit, quod harum. Rerum necessitatibus esse cum, explicabo doloribus fugit possimus facilis! Vel.</p>
+                        <div className="flex-grow-1 text-end">
+                            <h3>Joaquín Fritsch Santis</h3>
+                            <h5>Coordinador Front-End</h5>
                         </div>
-                       <img src={portraitNormal} alt="" srcset="" />
+                       <img src={portraitFritsch} alt="" srcset="" />
                     </div>
                 </div>
             </div>
