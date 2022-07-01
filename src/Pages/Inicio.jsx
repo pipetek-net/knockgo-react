@@ -1,7 +1,10 @@
 import React from 'react';
-import placeHolder from '../img/placeholder.png';
-import portraitNormal from '../img/portrait.png';
-import portraitFrench from '../img/portrait-french.png';
+import bannerKnockGo from '../img/banner/knockgo.jpg';
+import bannerPipeTek from '../img/banner/pipetek.jpg';
+import bannerPetinder from '../img/banner/petinder.png';
+import review1 from '../img/review-1.jpg';
+import review2 from '../img/review-2.jpg';
+import review3 from '../img/review-3.jpg';
 
 function Inicio() {
     return (
@@ -15,24 +18,24 @@ function Inicio() {
                   </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img src={placeHolder} className="d-block w-100" alt="..." />
+                        <img src={bannerKnockGo} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h2>Diagnostico</h2>
-                            <p>Realiza un auto-diagnostico en la sección de "Diagnostico", ¡es gratis!</p>
+                            <h2>Knock&Go</h2>
+                            <p>Servicio de reparación remota, ¡en tu pantalla!</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={placeHolder} className="d-block w-100" alt="..." />
+                        <img src={bannerPipeTek} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h2>Descargas</h2>
-                            <p>¡Puedes descargar los programas que utilizamos en la sección de "Descargas"!</p>
+                            <h2>PipeTek</h2>
+                            <p>Dedicado grupo de estudiantes en soluciones informáticas.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <img src={placeHolder} className="d-block w-100" alt="..." />
+                        <img src={bannerPetinder} className="d-block w-100" alt="..." />
                         <div className="carousel-caption d-none d-md-block">
-                            <h2>¿Todavía lo estas pensando...?</h2>
-                            <p>Puedes leer sobre nuestros valores, misión y mas en la sección de "Nosotros"</p>
+                            <h2>Próximamente...</h2>
+                            <p>Adopta a un animal, con la punta de tu dedo.</p>
                         </div>
                     </div>
                 </div>
@@ -46,33 +49,42 @@ function Inicio() {
                 </button>
             </div>
             <div className="container my-5">
-                <h3 className="text-center">Lorem</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ex eaque blanditiis aliquam! Beatae aperiam voluptas totam perferendis ab harum incidunt quo aspernatur labore nostrum, suscipit quis corporis rem commodi.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati omnis expedita quo ratione error minus id laudantium, placeat dolore optio exercitationem provident sequi. Maxime nisi dicta est, voluptas officia optio.</p>
-
-                <h3 className="text-center">Dolor</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae corrupti harum dignissimos tenetur voluptatibus animi quibusdam quidem laboriosam facilis, eum dolorum nobis quos iusto cum repellat? Ipsum excepturi magnam quod?</p>
-
-                <div className="d-flex justify-content-between my-5">
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitNormal} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">John Doe</h5>
-                            <p className="card-text">Se demoran un poco en dar el servicio pero una vez con el técnico ahi, todo bien!</p>
-                        </div>
+                <div className="mb-5">
+                    <h2>¿Tienes un dispositivo electrónico y <strong>necesitas ayuda</strong>?</h2>
+                    <p>Knock&Go es un servicio de reparación remota de dispositivos. Sin la necesidad de salir de tu casa o de invitar a alguien a ella. ¿Interesado? ¡Puedes informarte sobre las mentes creadoras <a href="/nosotros">aquí!</a></p>
+                    <div>
+                        <h3>Diagnóstico</h3>
+                        <p>Si te interesa saber mas sobre el problema que podría estar afectando tu dispositivo, puedes buscar una solución con nuestra herramienta de diagnostico, <strong>¡no requiere registro y es completamente gratuita!</strong></p>
                     </div>
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitNormal} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Juan Pablo</h5>
-                            <p className="card-text">Muy weno.</p>
-                        </div>
+                    <div>
+                        <h3>Reparación Remota</h3>
+                        <p>Si deseas ir un paso mas allá, nosotros podemos encargarnos del resto. Tras hacer el diagnostico, puedes contratar nuestro servicio y agendar una hora con alguno de nuestros técnicos.</p>
                     </div>
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src={portraitFrench} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                            <h5 className="card-title">Pierre le Baguette</h5>
-                            <p className="card-text">Ooh la la, baise moi je suis fatigué!</p>
+                </div>
+                <div>
+                    <h2>¡Psst! ¿Todavía no estas seguro?</h2>
+                    <p>¡Échale un vistazo a lo que nuestros clientes dicen de nosotros!</p>
+                    <div className="d-flex justify-content-between mb-5">
+                        <div className="card" style={{width: "18rem"}}>
+                            <img src={review1} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">Mauricio Rojas</h5>
+                                <p className="card-text">Recibí un excelente servicio, muy buena atención.</p>
+                            </div>
+                        </div>
+                        <div className="card" style={{width: "18rem"}}>
+                            <img src={review2} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">Andrea Araneda </h5>
+                                <p className="card-text">Solucionaron mi problema muchas gracias, los recomendare con mis amigos.</p>
+                            </div>
+                        </div>
+                        <div className="card" style={{width: "18rem"}}>
+                            <img src={review3} className="card-img-top" alt="..." />
+                            <div className="card-body">
+                                <h5 className="card-title">Chang Bizagi</h5>
+                                <p className="card-text">Muy bueno el servicio entregado y el precio bastante justo.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
