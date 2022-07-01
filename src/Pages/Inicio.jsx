@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Se importan las variables que serán utilizadas en la pagina.
 import bannerKnockGo from '../img/banner/knockgo.jpg';
 import bannerPipeTek from '../img/banner/pipetek.jpg';
 import bannerPetinder from '../img/banner/petinder.png';
@@ -6,6 +8,8 @@ import review1 from '../img/review-1.jpg';
 import review2 from '../img/review-2.jpg';
 import review3 from '../img/review-3.jpg';
 
+// Esta función es exportada al Template Engine, el contenido de la pagina
+// va dentro de un elemento '<>' porque la exportación solo soporta un elemento.
 function Inicio() {
     return (
         <>

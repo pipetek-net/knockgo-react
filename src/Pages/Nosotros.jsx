@@ -1,9 +1,13 @@
 import React from 'react';
+
+// Se importan las variables que serán utilizadas en la pagina.
 import portraitFritsch from '../img/nosotros/fritsch.jpg';
 import portraitHering from '../img/nosotros/hering.jpg';
 import portraitAravena from '../img/nosotros/aravena.jpg';
 import portraitSalinas from '../img/nosotros/salinas.jpg';
 
+// Esta función es exportada al Template Engine, el contenido de la pagina
+// va dentro de un elemento '<>' porque la exportación solo soporta un elemento.
 function Nosotros() {
     return(
         <>

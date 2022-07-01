@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Esta función es exportada al Template Engine, el contenido de la pagina forma parte
+// del Header/Nav (parte superior) de la pagina final.
 function Header() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">

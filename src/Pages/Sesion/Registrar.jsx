@@ -1,5 +1,7 @@
 import React from "react";
 
+// Esta función es exportada al Template Engine, el contenido de la pagina
+// va dentro de un elemento '<>' porque la exportación solo soporta un elemento.
 function SesionRegistrar() {
     return (
         <>

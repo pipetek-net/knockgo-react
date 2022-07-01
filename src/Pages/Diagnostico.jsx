@@ -1,11 +1,24 @@
 import React from 'react';
 
+// El uso de funciones dentro de un mismo .jsx en lugar de .js externo
+// permite al código modificar el DOM virtual generado por React.
+//
+// Las siguientes cuatro funciones se encargan de:
+// 1. UpdateDeviceType: Activa la selección de Marcas según el tipo de dispositivo y
+//    actualiza el detalle.
+// 2. UpdateDeviceBrand: Activa la selección de Categorias (de problemas) según el tipo
+//    de dispositivo y la marca, y actualiza el detalle.
+// 3. UpdateDeviceCategory: Genera (prototipo) las soluciones al problema y el precio en base al
+//    problema, y actualiza el detalle.
+// 4. UpdateDeviceOther: Monitorea las notas del usuario y actualiza el detalle.
 function UpdateDeviceType() {
     var deviceType = document.getElementById('deviceType');
     var deviceBrand = document.getElementById('deviceBrand');
     var detailType = document.getElementById('detailType');
     var detailTypeText = document.getElementById('detailTypeText');
 
+    // Verifica si el usuario seleccionó una opción en "Tipo de Dispositivo" y en base
+    // a esto deshabilita o no la siguiente opción (Marca).
     if (deviceType.value === 'none') {
         deviceBrand.setAttribute('disabled', '');
         deviceBrand.innerHTML = '<option value="none">Selecciona una opcion...</option>'
@@ -18,6 +31,7 @@ function UpdateDeviceType() {
         detailType.setAttribute('value', deviceType.value);
         detailTypeText.innerHTML = deviceType.value.charAt(0).toUpperCase() + deviceType.value.slice(1);
 
+        // Habilita distintas marcas en base al tipo de dispositivo que el usuario eligió.
         switch(deviceType.value)
         {
             case 'computador':
@@ -42,6 +56,8 @@ function UpdateDeviceBrand() {
     var issuesType;
     var issuesBrand;
 
+    // Verifica si el usuario seleccionó una opción en "Marca de Dispositivo" y en base
+    // a esto deshabilita o no la siguiente opción (Categoria de Problema).
     if (deviceBrand.value === 'none') {
         deviceCategory.setAttribute('disabled', '');
         deviceCategory.innerHTML = '<option value="none">Selecciona una opcion...</option>'
@@ -54,6 +70,8 @@ function UpdateDeviceBrand() {
         detailBrand.setAttribute('value', deviceBrand.value);
         detailBrandText.innerHTML = deviceBrand.value.charAt(0).toUpperCase() + deviceBrand.value.slice(1);
 
+        // Verifica el tipo de dispositivo que eligió el usuario y en base a esto habilita
+        // problemas específicos dependiendo de la marca elegida.
         if (deviceType.value === 'computador') {
             issuesType = '<option value="temperatura">Temperatura</option>';
             switch (deviceBrand.value)
@@ -107,6 +125,8 @@ function UpdateDeviceCategory() {
 
     console.log("DeviceCategory ", deviceCategory.value)
 
+    // Verifica que el usuario haya seleccionado un problema, y en base a eso se
+    // generan (prototipo) soluciones.
     if (deviceCategory.value === 'none') {
         detailCategory.removeAttribute('value');
         detailCategoryText.innerHTML = 'N/A';
@@ -118,7 +138,7 @@ function UpdateDeviceCategory() {
 
         switch (deviceCategory.value)
         {
-            /* Template
+            /* Template, para facilitar copiado y pegado.
                 case "":
                     detailSolution[0] = "";
                     detailSolution[1] = "";
@@ -181,6 +201,8 @@ function UpdateDeviceOther() {
     var detailOther = document.getElementById('detailOther');
     var detailOtherText = document.getElementById('detailOtherText');
 
+    // Verifica que el usuario haya escrito alguna nota y actualiza el campo respectivo
+    // en detalle.
     if (deviceOther.value === '') {
         detailOther.removeAttribute('value');
         detailOtherText.innerHTML = 'N/A';
@@ -191,6 +213,8 @@ function UpdateDeviceOther() {
     }
 }
 
+// Esta función es exportada al Template Engine, el contenido de la pagina
+// va dentro de un elemento '<>' porque la exportación solo soporta un elemento.
 function Diagnostico() {
     return(
         <>
